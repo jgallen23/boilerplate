@@ -1,0 +1,21 @@
+#!/bin/bash
+
+ROOT=`dirname $0`
+TYPE=$1
+NAME=$2
+PROJECT=$ROOT/$TYPE
+if [ -n "$TYPE" ] && [ -n "$NAME" ]; then
+	if [ -d "$PROJECT" ]; then
+		echo "exists"
+		cp -r $PROJECT $NAME
+		cd $NAME
+		find . -type f | xargs sed -i s/{name}/$NAME/
+	else
+		echo "$TYPE doesn't exist"
+	fi
+else
+	echo ""
+	echo "Usage:"
+	echo "bp [type] [projectName]"
+	echo ""
+fi

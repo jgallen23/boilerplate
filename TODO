@@ -1,0 +1,7 @@
+v0.0.1: @done
+	- bp type projectName @done(2012-02-20)
+	- copy folder from type @done(2012-02-20)
+	- replace {name} with projectName @done(2012-02-20)
+	- check if params @done(2012-02-20)
+	- git @done(2012-02-20)
+	- readme @done(2012-02-20)
