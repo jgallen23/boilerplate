@@ -1,3 +1,5 @@
+v0.0.2: @done(2012-02-21)
+	- gh page as separate bp @done(2012-02-21)
 v0.0.1: @done
 	- bp type projectName @done(2012-02-20)
 	- copy folder from type @done(2012-02-20)
